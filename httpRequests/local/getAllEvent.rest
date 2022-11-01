@@ -1,0 +1,2 @@
+GET http://localhost:5001/event/getAll
+token: <AUTH_TOKEN>
