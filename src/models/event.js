@@ -38,27 +38,28 @@ module.exports = function builMakeEvent
                     }
                 );
 
-                function toBson(){
-                    return {
-                        registerDate : {
-                            "$date": {
-                                "$numberLong": registerDate.toString()
-                                }
-                        },
-                        title: title,
-                        startDateTime : {
-                            "$date": {
-                                "$numberLong": startDateTime.toString()
-                                }
-                        },
-                        endDateTime : {
-                            "$date": {
-                                "$numberLong": endDateTime.toString()
-                                }
-                        },
-                        isActive: isActive
+                function toBson()
+                    {
+                        return {
+                            registerDate : {
+                                "$date": {
+                                    "$numberLong": registerDate.toString()
+                                    }
+                            },
+                            title: title,
+                            startDateTime : {
+                                "$date": {
+                                    "$numberLong": startDateTime.toString()
+                                    }
+                            },
+                            endDateTime : {
+                                "$date": {
+                                    "$numberLong": endDateTime.toString()
+                                    }
+                            },
+                            isActive: isActive
+                        }
                     }
-                }
 
             }
     }
